@@ -12,10 +12,11 @@
 	width: 100%;
 	display: grid;
 	gap: 3em 7em;
+	grid-template-columns: 0fr 3fr 1.25fr 0fr;
 	grid-template-areas:
-		"header header header header header"
-		". blog-area blog-area side-panel ."
-		"footer footer footer footer footer";
+		"header header header header"
+		". blog-area side-panel ."
+		"footer footer footer footer";
 }
 
 header {
@@ -51,6 +52,7 @@ main {
 	height: 100%;
 	width: 100%;
 }
+
 aside {
 	grid-area: side-panel;
 	height: 100%;
@@ -74,13 +76,13 @@ article img {
 }
 
 #blog-post-1 {
-    float: right;
-    margin: 0 0 1em 1em;
+	float: right;
+	margin: 0 0 1em 1em;
 }
 
 #blog-post-2 {
-    float: left;
-    margin: 0 1em 1em 0;
+	float: left;
+	margin: 0 1em 1em 0;
 }
 
 h3 {
